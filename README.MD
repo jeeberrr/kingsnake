@@ -19,6 +19,10 @@ On the server side, keys are generated using keygen.py in the Server folder, and
 
 ## USAGE (for help screen, more detailed usage info there):
 
+First install requirements.txt
+
+```pip install -r requirements.txt```
+
 builder.py:
 
 ```python3 builder.py```
