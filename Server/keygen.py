@@ -24,7 +24,7 @@ def keygen(password):
                 encryption_algorithm=serialization.NoEncryption()
             ))
 
-    with open("keys/pub.key", "wb") as f:
+    with open("keys/public.key", "wb") as f:
         f.write(pub.public_bytes(
             encoding=serialization.Encoding.PEM,
             format=serialization.PublicFormat.SubjectPublicKeyInfo
