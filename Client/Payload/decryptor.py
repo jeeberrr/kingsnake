@@ -1,9 +1,9 @@
 from cryptography.fernet import Fernet
-import os, platform, configparser, requests
+import os, platform, configparser, requests, getpass
 import tkinter as tk
 from tkinter import ttk
 
-user = os.getlogin()
+user = getpass.getuser()
 
 #sorry but i gotta put this here
 match platform.system():
