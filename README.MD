@@ -3,6 +3,8 @@ Kingsnake is a simple ransomware written in python.
 
 # THIS IS FOR EDUCATIONAL AND RESEARCH PURPOSES ONLY, I (JEEBERRR, THE AUTHOR) AM NOT RESPONSIBLE FOR ANY ILLEGAL USAGE OR DAMAGE, USE AT YOUR OWN RISK
 
+![image](https://raw.githubusercontent.com/jeeberrr/kingsnake/refs/heads/main/screenshots/Screenshot%202026-03-23%20132314.png)
+
 ## EVERYTHING HERE IS CONFIRMED TO WORK, EXCEPT FOR THE RANSOM FUNCTIONALITY WHICH WILL BE TESTED IN THE UPCOMING DAYS ON VIRTUAL MACHINES. THE ONLY OS THAT WILL REMAIN UNTESTED IS MACOS
 
 Kingsnake is a proof of concept ransomware that includes a builder, server, and asymetric encryption keygen. It includes functionalities such as linking a discord webhook to it aswell.
